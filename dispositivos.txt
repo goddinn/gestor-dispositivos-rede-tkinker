@@ -1,0 +1,263 @@
+[
+    {
+        "Nome": "R1",
+        "Marca": "Cisco",
+        "Modelo": "C2900",
+        "Estado": "Ligado",
+        "Tipo": "Router",
+        "dados_especificos": {
+            "num_portas": 4,
+            "interfaces_ip": [
+                {
+                    "iface": "G0/0",
+                    "ip": "192.168.1.1",
+                    "mask": "255.255.255.0",
+                    "ligado_a": "G0/1-SW3"
+                },
+                {
+                    "iface": "G0/1",
+                    "ip": "192.168.2.1",
+                    "mask": "255.255.255.0",
+                    "ligado_a": "G0/1-SW2"
+                },
+                {
+                    "iface": "G0/0",
+                    "ip": "192.168.1.1",
+                    "mask": "255.255.255.0",
+                    "ligado_a": "G0/1-SW1"
+                },
+                {
+                    "iface": "G0/0/0",
+                    "ip": "202.153.34.23",
+                    "mask": "255.255.255.252",
+                    "ligado_a": "ISP"
+                }
+            ]
+        }
+    },
+    {
+        "Nome": "SW1",
+        "Marca": "Cisco",
+        "Modelo": "2960",
+        "Estado": "Desligado",
+        "Tipo": "Switch",
+        "dados_especificos": {
+            "num_portas": 24,
+            "ip_gestao": "192.168.99.2",
+            "port_vlan_map": [
+                {
+                    "porta": "G0/1",
+                    "vlan": "99",
+                    "ligado_a": "R1-G0/0"
+                },
+                {
+                    "porta": "Fa0/1",
+                    "vlan": "100",
+                    "ligado_a": "PC1-RH"
+                },
+                {
+                    "porta": "Fa0/2",
+                    "vlan": "100",
+                    "ligado_a": "PC3-RH"
+                },
+                {
+                    "porta": "Fa0/3",
+                    "vlan": "100",
+                    "ligado_a": "PC3-RH"
+                },
+                {
+                    "porta": "Fa0/4",
+                    "vlan": "100",
+                    "ligado_a": "PC4-RH"
+                },
+                {
+                    "porta": "Fa0/5",
+                    "vlan": "100",
+                    "ligado_a": "PC5-RH"
+                },
+                {
+                    "porta": "Fa0/5",
+                    "vlan": "100",
+                    "ligado_a": "PC5-RH"
+                },
+                {
+                    "porta": "Fa0/6",
+                    "vlan": "100",
+                    "ligado_a": "PC6-RH"
+                }
+            ]
+        }
+    },
+    {
+        "Nome": "SW2",
+        "Marca": "Cisco",
+        "Modelo": "2960",
+        "Estado": "Ligado",
+        "Tipo": "Switch",
+        "dados_especificos": {
+            "num_portas": 24,
+            "ip_gestao": "192.168.99.3",
+            "port_vlan_map": [
+                {
+                    "porta": "Fa0/1",
+                    "vlan": "110",
+                    "ligado_a": "PC1-Vendas"
+                },
+                {
+                    "porta": "Fa0/2",
+                    "vlan": "110",
+                    "ligado_a": "PC2-Vendas"
+                },
+                {
+                    "porta": "Fa0/3",
+                    "vlan": "110",
+                    "ligado_a": "PC3-Vendas"
+                },
+                {
+                    "porta": "Fa0/4",
+                    "vlan": "110",
+                    "ligado_a": "PC4-Vendas"
+                },
+                {
+                    "porta": "Fa0/5",
+                    "vlan": "110",
+                    "ligado_a": "PC5-Vendas"
+                },
+                {
+                    "porta": "Fa0/6",
+                    "vlan": "115",
+                    "ligado_a": "PC1-Financas"
+                },
+                {
+                    "porta": "Fa0/7",
+                    "vlan": "115",
+                    "ligado_a": "PC2-Financas"
+                },
+                {
+                    "porta": "Fa0/8",
+                    "vlan": "115",
+                    "ligado_a": "PC3-Financas"
+                },
+                {
+                    "porta": "Fa0/9",
+                    "vlan": "115",
+                    "ligado_a": "PC4-Financas"
+                },
+                {
+                    "porta": "Fa0/10",
+                    "vlan": "120",
+                    "ligado_a": "PC1-Marketing"
+                },
+                {
+                    "porta": "Fa0/11",
+                    "vlan": "120",
+                    "ligado_a": "PC2-Marketing"
+                },
+                {
+                    "porta": "Fa0/12",
+                    "vlan": "120",
+                    "ligado_a": "PC3-Marketing"
+                },
+                {
+                    "porta": "Fa0/12",
+                    "vlan": "120",
+                    "ligado_a": "PC3-Marketing"
+                },
+                {
+                    "porta": "Fa0/13",
+                    "vlan": "120",
+                    "ligado_a": "PC4-Marketing"
+                }
+            ]
+        }
+    },
+    {
+        "Nome": "SW3",
+        "Marca": "Cisco",
+        "Modelo": "2960",
+        "Estado": "Ligado",
+        "Tipo": "Switch",
+        "dados_especificos": {
+            "num_portas": 24,
+            "ip_gestao": "192.168.99.4",
+            "port_vlan_map": [
+                {
+                    "porta": "Fa0/1",
+                    "vlan": "125",
+                    "ligado_a": "PC1-Produção"
+                },
+                {
+                    "porta": "Fa0/2",
+                    "vlan": "125",
+                    "ligado_a": "PC2-Produção"
+                },
+                {
+                    "porta": "Fa0/3",
+                    "vlan": "125",
+                    "ligado_a": "PC3-Produção"
+                },
+                {
+                    "porta": "Fa0/4",
+                    "vlan": "125",
+                    "ligado_a": "PC4-Produção"
+                }
+            ]
+        }
+    },
+    {
+        "Nome": "SW4",
+        "Marca": "Cisco",
+        "Modelo": "2960",
+        "Estado": "Ligado",
+        "Tipo": "Switch",
+        "dados_especificos": {
+            "num_portas": 24,
+            "ip_gestao": "192.168.99.5",
+            "port_vlan_map": [
+                {
+                    "porta": "G0/1",
+                    "vlan": "99",
+                    "ligado_a": "G0/3-R1"
+                },
+                {
+                    "porta": "Fa0/1",
+                    "vlan": "150",
+                    "ligado_a": "Servidor DELL"
+                }
+            ]
+        }
+    },
+    {
+        "Nome": "Serv. Serviços Empresa",
+        "Marca": "DELL",
+        "Modelo": "Poweredge R260",
+        "Estado": "Ligado",
+        "Tipo": "Servidor",
+        "dados_especificos": {
+            "endereco_ip": "192.168.150.10",
+            "sistema_operativo": "Debian13",
+            "servicos": [
+                {
+                    "nome": "SSH",
+                    "ip": "192.168.150.10",
+                    "placa": "ens160"
+                },
+                {
+                    "nome": "DHCP",
+                    "ip": "192.168.150.11",
+                    "placa": "ens220"
+                },
+                {
+                    "nome": "FTP",
+                    "ip": "192.168.150.12",
+                    "placa": "ens140"
+                },
+                {
+                    "nome": "LAMP",
+                    "ip": "192.168.150.20",
+                    "placa": "ens180"
+                }
+            ]
+        }
+    }
+]
