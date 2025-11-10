@@ -1,0 +1,1 @@
+# gestor-dispositivos-rede-tkinker
